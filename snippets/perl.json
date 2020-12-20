@@ -1,0 +1,39 @@
+{
+  "newOOPClass": {
+    "prefix": "noc",
+    "body": [
+      "#!/usr/bin/perl\n\n",
+      "use strict;",
+      "use warnings;\n\n",
+      "package ${1:${TM_FILENAME_BASE}};\n\n",
+      "sub new{",
+      "\t#This is considered a method or known as a sub",
+      "\tmy $$class = shift;",
+      "\t#initializing an object",
+      "\tmy $$object_example = {",
+      "\t\t'name' => shift,",
+      "\t\t'a_number' => shift",
+      "\t};",
+      "\t#associate an object to a class",
+      "\t#or bind",
+      "\tbless $$object_example, $$class;",
+      "\t#then return the object",
+      "\treturn $$object_example;",
+      "}",
+      "my $$obj = ${1:${TM_FILENAME_BASE}}->new('String and id->',01);",
+      "print \"$$obj->{'name'}\";"
+    ],
+    "description": "Establishes a newly created class utilizing the Perl Language."
+  },
+  "newSubMethod": {
+    "prefix": "nsm",
+    "body": [
+      "sub ${1:${TM_FILENAME_BASE}}{",
+      "  my $$variable = scalar(@_);",
+      "  print \"$$_[0]\";",
+      "};",
+      "&${1:${TM_FILENAME_BASE}}('Test string.');"
+    ],
+    "description": "This establishes a new method utilizing the Perl language. \n Example:"
+  }
+}
