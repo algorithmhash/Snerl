@@ -21,7 +21,7 @@ jobs:
       - name: Validate JSON
         uses: OrRosenblatt/validate-json-action@0.1.0
         with:
-          schema: ./schema.json
+          # leave the schema key empty to use default
           # we want to target all json scripts only
           json:  ./snippets/*.json 
       # Next we build and test the typescript files
