@@ -5,11 +5,11 @@ Perl Snippets because I am tired of not having them. Similar to any other snippe
 Perl is for anyone who wants more flexibility from a programming language. It isn't dead. Here are some snippets for you to try out or even update if you find them lacking some sort of better code. Whether it be better standards, algorithm implementations etc.
 
 
-## Current focus
+## Current Focus
 
 Current focus right now is to make it faster for one to create projects with standardized code so that projects are secure, able to scale, and easily contributable by other programmers. If writing an algorithm think about time and space complexity. If you can make it as simple as possible then great. Comment your code and try not to nest any loops. 
 
-## How to install
+## How To Install & Use
 
 You can search from the store by clicking the icon on the left of your VSC application or you can definitely use the shortcut methods:
 ``` 
