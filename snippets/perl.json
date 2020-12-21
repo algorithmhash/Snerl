@@ -35,5 +35,49 @@
       "&${1:${TM_FILENAME_BASE}}('Test string.');"
     ],
     "description": "This establishes a new method utilizing the Perl language. \n Example:"
+  },
+  "ifExistsInArray": {
+    "prefix": "iea",
+    "body": [
+      "my \\$item_exists = grep { \\$_ eq 'item' } @ary;"
+    ],
+    "description": "This creates logic neccessary to finding a value within an array without a module."
+  },
+  "smartMatchArray":{
+    "prefix": "sma",
+    "body": [
+      "my \\$item_exists = 'item' ~~ @ary;"
+    ]
+  },
+  "variableName":{
+    "prefix": "mvar",
+    "body": [
+      "my \\$variable = '';"
+    ],
+    "description": "This establishes a variable argument."
+  },
+  "listUtilFirst": {
+    "prefix": "lufa",
+    "body": [
+      "my \\$item_exists = first { \\$_ eq 'item' } @ary;"
+    ],
+    "description": "Using List::Util first logic."
+  },
+  "pickRandomValue": {
+    "prefix": "rav",
+    "body": [
+      "my \\$elem = \\$ary[rand @ary];"
+    ],
+    "description": "Returning a random value within the array."
+  },
+  "arraySortTransform": {
+    "prefix": "as1",
+    "body":[
+      "my @sorted = map  { \\$_->[0] }\n",
+             "\tsort { \\$a->[1] <=> \\$b->[1] }\n",
+             "\tmap  { [\\$_, gen_key_for(\\$_)] }\n",
+             "\t@ary;"
+    ],
+    "description": "Transform using Schwartzian transform which is a one-way sort using an array key. Ex:\nlength($_) (to sort by string length)\n lc($_)  (to do case-insensitive sorting)\nRelated documentation: https://en.wikipedia.org/wiki/Schwartzian_transform"
   }
 }
