@@ -33,8 +33,8 @@
     "keybindings": [
       {
         "command": "extension.snippetSearch",
-        "key": "ctrl+alt+r+t",
-        "mac": "shift+cmd+k+l",
+        "key": "ctrl+alt+z",
+        "mac": "shift+cmd+z",
         "when": "editorTextFocus"
       }
     ],
