@@ -32,7 +32,7 @@
       "  my \\$variable = scalar(@_);",
       "  print \"\\$_[0]\";",
       "};",
-      "&${1:${TM_FILENAME_BASE}}('Test string.');"
+      " &${1:${TM_FILENAME_BASE}}('Test string.');"
     ],
     "description": "This establishes a new method utilizing the Perl language. \n Example:"
   },
