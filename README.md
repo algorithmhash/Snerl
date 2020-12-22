@@ -20,8 +20,8 @@ Then in the search just search for snerl. Should see a camel logo.
 The shortkeys are as follows for searching through the snippets:
 
 ```
-ctrl+alt+z (Windows & Linux)
-shift+cmd+z (MacOS)
+ctrl+alt+r+t (Windows & Linux)
+shift+cmd+r+t (MacOS)
 
 ```
 Then just search through the list. A list will be updated in the future and will add a project setup to better handle the project flow.
