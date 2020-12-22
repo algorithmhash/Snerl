@@ -1,64 +1,58 @@
 {
-  "name": "snerl",
-  "version": "1.4.73",
-  "description": "Perl snippets for quicker project manifestation",
-  "icon": "images/header_camel.png",
-  "editor.tabCompletion": "on",
-  "publisher": "aquila",
-  "main": "./out/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/algorithmhash/Snerl.git"
-  },
-  "keywords": [
-    "\"Perl\"",
-    "\"Snippets\""
-  ],
-  "activationEvents": [
-    "onCommand:extension.snippetSearch"
-  ],
-  "engines": {
-    "vscode": "^1.52.1"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.snippetSearch",
-        "title": "Perl Snippet Selection"
-      }
+    "name": "snerl",
+    "version": "1.4.74",
+    "description": "Perl snippets for quicker project manifestation",
+    "icon": "images/header_camel.png",
+    "editor.tabCompletion": "on",
+    "publisher": "aquila",
+    "main": "./out/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/algorithmhash/Snerl"
+    },
+    "keywords": [
+        "\"Perl\"",
+        "\"Snippets\""
     ],
-    "keybindings": [
-      {
-        "command": "extension.snippetSearch",
-        "key": "ctrl+alt+z",
-        "mac": "shift+cmd+z",
-        "when": "editorTextFocus"
-      }
+    "activationEvents": [
+        "onCommand:extension.snippetSearch"
     ],
-    "snippets": [
-      {
-        "language": "perl",
-        "path": "./snippets/perl.code-snippets"
-      }
-    ]
-  },
-  "author": "Hunter Rafuse",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/algorithmhash/Snerl/issues"
-  },
-  "homepage": "https://github.com/algorithmhash/Snerl#readme",
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/node": "^14.0.14",
-    "@types/vscode": "^1.45.0",
-    "typescript": "3.9.6"
-  }
+    "engines": {
+        "vscode": "^1.52.1"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "commands": [{
+            "command": "extension.snippetSearch",
+            "title": "Perl Snippet Selection"
+        }],
+        "keybindings": [{
+            "command": "extension.snippetSearch",
+            "key": "ctrl+alt+z",
+            "mac": "shift+cmd+z",
+            "when": "editorTextFocus"
+        }],
+        "snippets": [{
+            "language": "perl",
+            "path": "./snippets/perl.code-snippets"
+        }]
+    },
+    "author": "Hunter Rafuse",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/algorithmhash/Snerl/issues"
+    },
+    "homepage": "https://github.com/algorithmhash/Snerl#readme",
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.14",
+        "@types/vscode": "^1.45.0",
+        "typescript": "3.9.6"
+    }
 }
