@@ -1,6 +1,6 @@
 {
     "name": "snerl",
-    "version": "1.4.77",
+    "version": "1.4.8",
     "description": "Perl snippets for quicker project manifestation",
     "icon": "images/header_camel.png",
     "editor.tabCompletion": "on",
@@ -29,11 +29,16 @@
             "title": "Perl Snippet Selection"
         }],
         "keybindings": [{
-            "command": "extension.snippetSearch",
-            "key": "ctrl+alt+r+t",
-            "mac": "shift+cmd+r+t",
-            "when": "editorTextFocus"
-        }],
+                "command": "extension.snippetSearch",
+                "key": "ctrl+alt+r+t",
+                "mac": "shift+cmd+r+t",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus"
+            }
+        ],
         "snippets": [{
             "language": "perl",
             "path": "./snippets/perl.code-snippets"
